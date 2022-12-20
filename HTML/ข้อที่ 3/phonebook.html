@@ -28,7 +28,7 @@
             margin-top: 1.5em;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             border-collapse: collapse;
-            width: 600px;
+            width: 800px;
             border-spacing: 5px;
             margin-inline: 50%; 
             transform: translate(-50%); 
@@ -40,9 +40,16 @@
             }
             th {font-size: 1.2em;}
             td:last-child {text-align: center;}
-
-            @media(max-width: 450px) {table {width: 200px;}}
-            @media(max-width: 820px) {table {width: 600px;}}
+            @media (max-width: 850px) {
+                table {
+                    width: 600px;
+                }
+            }
+            @media (max-width: 450px) {
+                table {
+                    width: 250px;
+                }
+            }
     </style>
 </head>
 <body>
