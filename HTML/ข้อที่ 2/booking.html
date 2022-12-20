@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#Book_Flight">Book Flight</a></li>
+        <li><a href="#Schedule">Schedule</a></li>
+        <li><a href="#Ticket">Ticket</a></li>
+        <li><a href="#Hotel">Hotel</a></li>
+    </ul>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+        <div class="container">
+        <div class="from"><label for="from"><strong>Flying from</strong></label><br>
+            <select id="from" name="from">
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bangkok">Bangkok</option>
+                <option value="Chiangmai">Chiangmai</option>
+                <option value="Pukhet">Pukhet</option>
+            </select>
+        </div>
+        <div class="to"><label for="to"><strong>To</strong></label><br>
+            <select id="to" name="to">
+                <option value="Chiangmai">Chiangmai</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bangkok">Bangkok</option>
+                <option value="Pukhet">Pukhet</option>
+            </select>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="departing">
+            <label for="departing"><strong>Departing</strong></label><br>
+            <input type="date" id="departing" name="departing">
+        </div>
+        <div class="returning">
+            <label for="returning"><strong>Returning</strong></label><br>
+            <input type="date" id="returning" name="returning">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="Adult">
+            <label for="Adult"><strong>Adult</strong></label><br>
+            <input type="number" id="Adult" name="Adult" min="0" max="50">
+        </div>
+        <div class="Child">
+            <label for="Child"><strong>Child</strong></label><br>
+            <input type="number" id="Child" name="Child" min="0" max="50">
+        </div>
+        <div class="Child">
+            <label for="Infant"><strong>Infant</strong></label><br>
+            <input type="number" id="Infant" name="Infant" min="0" max="50">
+        </div>
+        <div class="Currency">
+            <label for="Currency" style="color: red; width: 100px;"><strong>Currency</strong></label><br>
+                <select id="Currency" name="Currency">
+                    <option value="Chiangmai">CMX</option>
+                    <option value="Pakistan">PKR</option>
+                    <option value="Bangkok">DMK</option>
+                    <option value="Pukhet">HKT</option>
+                </select>
+        </div>
+    </div>
+    <div class="container3">
+        <input type="submit" value="SEARCH">
+    </div>
+
+
+    </form>
+</body>
+</html>
