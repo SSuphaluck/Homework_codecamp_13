@@ -40,7 +40,8 @@ a:hover {text-decoration: underline;}
     width: 90%;
     margin-left: 50%;
     transform: translate(-50%); 
-    border-color: white;}
+    border-color: white;
+    border-bottom-style: none;}
 button {
     padding: 15px;
     border: 1px solid rgba(196, 196, 196, 0.836);
@@ -58,7 +59,7 @@ button:hover:not(.active) {background-color: rgb(76, 169, 24);}
 .container3, .container4 {padding-top: 5px;}
 .footer {width: 980px; color: rgb(128, 128, 128); display: flex; flex-direction: column;}
 li, li a {color: rgb(128, 128, 128); padding-right: 10px; font-size: 12px;}
-.footer hr, .footer div[class="Met"] {margin: 10px 0 8px;}
+.footer hr, .footer div[class="Met"] {margin: 10px 0 8px; border-bottom-style: none;}
 ul {
     display: flex;
     list-style: none;

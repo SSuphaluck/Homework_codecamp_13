@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        .header ul {display: flex; list-style-type: none; padding: 1px; font-size: 12px;}
+        .header li {padding: 5px;}
+        hr {width: 98%; margin-left: 50%; transform: translate(-50%); border-bottom-style: none;;}
+        .container {margin: 5px 0 15px 5px; width: auto; height: auto;}
+        h1 {padding-top: 15px; margin: 10px 15px 0 5px;}
+        .container {margin: 15px; border: 1px solid rgb(173, 173, 173); width: 350px; height: 450px; border-radius: 7px;}
+        .inside {padding: 30px;}
+        form, .box {margin-top: 15px;}
+        input:not(input[type="submit"]):not(input[type="reset"]), select, textarea {width: 250px; border: 1px solid rgb(173, 173, 173);}
+        input[type="submit"], input[type="reset"] {padding: 2px;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="./index.html">Home |</a></li>
+            <li><a href="./education.html">Education |</a></li>
+            <li><a href="./work.html">Work Experience |</a></li>
+            <li><a href="./contact.html">Contact Me |</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h1>Contract Me</h1>
+    <div class="container">
+        <div class="inside">
+            <p>Enter your info..</p>
+            <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                <div class="box">
+                    <label for="name">Your Name</label><br>
+                    <input type="text" id="name" name="name" value="">
+                </div>
+                <div class="box">
+                    <label for="mail">Your E-mail</label><br>
+                    <input type="text" id="mail" name="mail" value="">
+                </div>
+                <div class="box">
+                    <label for="gender">Gender</label><br>
+                    <select name="gender" id="gender">
+                        <option value="gender">Select..</option>
+                        <option value="gender">Man</option>
+                        <option value="gender">Woman</option>
+                        <option value="gender">Others</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="message">Message</label><br>
+                    <textarea id="textbox" name="textbox" rows="10" cols="30"></textarea>
+                </div>
+                <div class="box">
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
