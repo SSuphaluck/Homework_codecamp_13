@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let score = +prompt('คะแนนเท่าไร');
+        let message;
+            if (score > 79 && score < 101) {
+                message = 'A';
+            } else if (score > 69 && score < 80) {
+                message = 'B';
+            } else if (score > 59 && score < 70) {
+                message = 'C';
+            } else if (score > 49 && score < 60) {
+                message = 'D';
+            } else if (score < 50 && score >= 0) {
+                message = 'F';
+            } else {
+                message = 'Whattttt!';
+            }
+        alert(message);
+    </script>
+</body>
+</html>

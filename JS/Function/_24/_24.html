@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function draw(n) {
+            let start = 1;
+            for(let i = 1; i <= n*2-1; i++) {
+                let num = "";
+                for(let m = 1; m <= n*2-1; m++) {
+                    if(i <= n) {
+                        if(m <= n-i || m >= n+i ) {
+                            num += "-";
+                        } else {
+                            num += start++;
+                        }
+                    } else {
+                        if(m <= i-n || m >= (n*3-i)) {
+                            num += "-";
+                        } else {
+                            num += start++;
+                        }
+                    }
+                }
+                console.log(num);
+            }
+        }
+    </script>
+</body>
+</html>
