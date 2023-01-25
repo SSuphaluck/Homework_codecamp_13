@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ucFirst(string) {
+            let firstChar = string[0] // or = str.slice(0, 1)
+            let leftString = string.slice(1)
+            
+            return firstChar.toUpperCase() + leftString.toLowerCase()
+        }
+
+        console.log(ucFirst("test krub"))
+        console.log(ucFirst("TEST krub"))
+    </script>
+</body>
+</html>
